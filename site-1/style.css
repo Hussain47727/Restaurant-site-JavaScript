@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+#first-section{
+    /* height: 100vh; */
+    padding-bottom: 300px;
+    width: 100vw;
+    background-color: rgb(40, 39, 39);
+    background-blend-mode: overlay;
+    background-image: url(./images/software\ company1\ \(28\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: zoomBackground 10s ease-in-out infinite; 
+}
+.logo img{
+    cursor: pointer;
+}
+
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+.navbar{
+    width: 100vw;
+    background: #060606;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight:bold;
+}
+ul li a:hover{
+    cursor: pointer;
+    color: rgb(118, 118, 187);
+}
+#open-menu{
+    display: none;
+}
+#cut-menu{
+    display: none;
+}
+.menu{
+    font-size: 40px;
+    color: white;
+}
+.cut{
+    font-size: 40px;
+    color: white; 
+}
+.book button{
+    padding: 10px 25px;
+    background: #ffffff;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+.book button:hover{
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+.f-hed{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-top: 50px;
+}
+.f-hed h1{
+    font-size: 80px;
+    color: white;
+}
+.line{
+    width: 70px;
+    height: 0px;
+    border-top: 4px solid white;
+}
+.f-hed p{
+    font-size: 20px;
+    color: white;
+    line-height: 2rem;
+}
+#second-section{
+    width: 100;
+    position: relative;
+    background: #f3f0f0;
+    padding: 100px 0px;
+
+}
+.ovr-lay{
+    width: 91vw;    
+    margin: auto auto;
+    position: absolute;
+    top: -100px;
+    left: 50px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    background: #fff;
+    border-radius: 15px;
+    padding: 0px 20px;
+}
+.about-us{
+    height: 80vh;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.women{
+    position: relative;
+}
+.bg-image{
+    width: 76%;
+    height: 10%;
+    border-radius: 10px;
+    
+}
+.overlay{
+    position: absolute;
+    left: 40px;
+    top: -65px;
+}
+.s-hed{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.s-hed h1{
+    font-size: 70px;
+}
+.s-hed p{
+    font-size: 20px;
+    color: rgb(132, 131, 131);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 20px;
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+.form-group input{
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+label{
+    font-size: 18px;
+    font-weight: 600px;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#People{
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.check-avalability{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 18px 10px;
+    border: none;
+    background: #000;
+    color: white;
+}
+.check-avalability:hover{
+    background:green;
+}
+@media (max-width : 1275px){
+    .form-container{
+        flex-wrap :wrap;
+    }
+    .about-us{
+        flex-wrap: wrap;
+        padding: 90px 50px;
+    }
+    .flex-img{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width : 788px){
+    #open-menu{
+        display: block;
+    }
+    .navbar ul{
+        /* display: none; */
+        width: 40%;
+        padding: 40px 40px;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(24, 24, 24);
+        gap: 70px;
+        top: 102px;
+        left: -100%;
+        transition: all ease 1s;
+    }
+    .book{
+        display: none;
+    }
+    
+}
+#featured-sectio{
+    padding: 5rem 0px;
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: center; */
+}
+.offer{
+    text-align: center;
+}
+.flex-img{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding: 60px 0px;
+}
+.you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.you h1{
+    font-size: 25px;
+    font-weight: 100;
+}
+.you span{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(1, 110, 1);
+}
+.you button{
+    position: absolute;
+    top: 300px;
+    padding: 15px 40px;
+    background:rgb(67, 181, 67);
+    color: wheat;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    display: none;
+}
+.you:hover button{
+    display: block;
+}
+.you button:hover{
+    background-color: purple;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+#restaurant{
+    padding: 60px 0px;
+    background: #f3f0f0;
+    text-align: center;
+}
+#restaurant h1{
+    font-size: 40px;
+}
+.java{
+    width: 93vw;
+    margin: 30px auto;
+    background: #fff;
+    /* padding: 30px 0px; */
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+.top{
+    background: #151515;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.top button{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #151515;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.top button:hover{
+    opacity: 0.9;
+}
+#main{
+    display: block;
+}
+.main-data{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    padding: 90px 250px;
+    padding-bottom: 0px;
+    /* display: none; */
+}
+.main-data span{
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(17, 157, 17);
+    opacity: 0.7;
+}
+.main-data h1{
+    font-size: 20px;
+    font-weight: 300;
+}
+.main-data p{
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+#desserts{
+    display: none;
+}
+.Desserts-data{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    padding: 90px 250px;
+    padding-bottom: 0px;
+    /* display: none; */
+}
+.Desserts-data span{
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(17, 157, 17);
+    opacity: 0.7;
+}
+.Desserts-data h1{
+    font-size: 20px;
+    font-weight: 300;
+}
+.Desserts-data p{
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+#drinks{
+    display: none;
+}
+.Drinks-data{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    padding: 90px 250px;
+    padding-bottom: 0px;
+    /* display: none; */
+}
+.Drinks-data span{
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(17, 157, 17);
+    opacity: 0.7;
+}
+.Drinks-data h1{
+    font-size: 20px;
+    font-weight: 300;
+}
+.Drinks-data p{
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.full-img{
+    width: 100vw;
+}
+.three{
+    display: flex;
+    justify-content: center;
+}
+.three img{
+    width: 33.4vw;
+}
+.two{
+    display: flex;
+}
+.two img{
+    width: 50vw;
+    height: 50vh;
+}
+
+#footer{
+    background: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.list-footer{
+    display: flex;
+    gap: 15px;
+}
+.list-footer div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    /* padding-left: 100px; */
+
+}
+.list-footer div{
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+#footer p{
+    color: white;
+}
+.icons{
+    display: flex;
+    gap: 30px;  
+    font-size: 30px;
+    color: white;
+}
+.icons i{
+    border: 1px solid rgba(71, 68, 68, 0.9);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.icons i:hover{
+    color: green;
+}

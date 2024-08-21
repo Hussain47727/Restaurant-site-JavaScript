@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant-site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+</head>
+
+<body>
+    <div id="first-section">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/software company1 (54).png" alt="">
+            </div>
+            <ul id="links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">TYPOGRAPHY</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            <div class="book">
+                <button>BOOK NOW</button>
+            </div>
+            <div id="open-menu" onclick="clickOpen()">
+                <i class="ri-menu-line menu"></i>
+            </div>
+            <div id="cut-menu" onclick="clickClose()">
+                <i class="ri-arrow-left-line cut"></i>
+            </div>
+        </div>
+        <div class="f-hed">
+            <h1>WELCOME</h1>
+            <div class="line"></div>
+            <p>Our restaurant offers full-service dining with breathtaking views <br> seen from our indoor covered patio
+                and
+                our outdoor sundeck.</p>
+        </div>
+    </div>
+
+    <div id="second-section">
+        <div class="ovr-lay">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="name">YOUR NAME</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="Phone">PHONE</label>
+                    <input type="text" id="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="Date">DATE</label>
+                    <input type="text" id="date" placeholder="30/07/24">
+                </div>
+                <div class="dropdown">
+                    <label for="People">NO. OF PEOPLE</label>
+                    <select id="People">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <button class="check-avalability">CHECK AVAILABILITY</button>
+            </div>
+        </div>
+        <div class="about-us">
+            <div class="women">
+                <img src="./images/software company1 (35).jpg" class="bg-image" alt="">
+                <img class="overlay" src="./images/software company1 (55).png" alt="">
+            </div>
+            <div class="s-hed">
+                <h1>About us</h1>
+                <p>Pesto is a family owned and operated Italian Restaurant offering a <br> combination of fresh
+                    ingredients
+                    and authentic Italian cooking. <br>
+
+                    We will make sure you are served the most authentic and fresh <br> Italian dishes, while offering
+                    the
+                    best customer service. Our kitchen <br> is committed to providing our guests with the best Italian
+                    Cuisine.</p>
+                <div>
+                    <img src="./images/software company1 (56).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="featured-sectio">
+        <div class="offer s-hed">
+            <h1>Featured Offers</h1>
+            <p>We offer a great variety of the best Italian dishes to our visitors and guests. Below are some of <br>
+                our most popular main dishes and desserts.</p>
+        </div>
+
+        <div class="flex-img">
+            <div class="you">
+                <img src="./images/software company1 (30).jpg" alt="">
+                <h1>Ravioli</h1>
+                <span>$8</span>
+                <button>ORDER</button>
+            </div>
+            <div class="you">
+                <img src="./images/software company1 (31).jpg" alt="">
+                <h1>Black Pasta</h1>
+                <span>$13</span>
+                <button>ORDER</button>
+            </div>
+            <div class="you">
+                <img src="./images/software company1 (33).jpg" alt="">
+                <h1>Gelato</h1>
+                <span>$4</span>
+                <button>ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="restaurant">
+        <h1>Our Restaurant Menu</h1>
+
+        <div class="java">
+            <div class="top">
+                <button id="Mains" onclick="Mains()">MAINS</button>
+                <button id="Desserts" onclick="Desserts()">DESSERTS</button>
+                <button id="Drinks" onclick="Drinks()">DRINKS</button>
+            </div>
+
+            <div id="main">
+                <div class="main-data">
+                    <span>$25.89</span>
+                    <h1>Osso Buco</h1>
+                    <p>Osso Buco is one of the Italian greats - slow cooked veal in a white wine tomato sauce. Meltingly
+                        <br> tender, this is both hearty and luxurious.</p>
+                </div>
+                <div class="main-data">
+                    <span>$16.89</span>
+                    <h1>Pappardelle Mimmo</h1>
+                    <p>This delicious dish tops long, wide pasta with scallops, lobster, asparagus, butter, sage <br>
+                        and truffle oil to cater every palate.</p>
+                </div>
+                <div class="main-data">
+                    <span>$17.89</span>
+                    <h1>Trippa Satriano</h1>
+                    <p>Thinly sliced herb encrusted ahi tuna topped with diced tomatoes, olives, capers, red onions <br>
+                        and fennel. Perfect choice even for the first-time visitors!</p>
+                </div>
+                <div class="main-data">
+                    <span>$18.89</span>
+                    <h1>Filetto Di Manzo</h1>
+                    <p>Wonderful combination of prime tenderloin, winter greens, Jerusalem artichoke puree, and <br>
+                        oxtail reduction sauce</p>
+                </div>
+            </div>
+            <div id="desserts">
+                <div class="Desserts-data">
+                    <span>$20.89</span>
+                    <h1>Tiramisu</h1>
+                    <p>A Pesto’s favorite - classic Italian dessert made with lady fingers, Mascarpone cheese & <br>
+                        espresso. Perfect for both kids and adults.</p>
+                </div>
+                <div class="Desserts-data">
+                    <span>$6.89</span>
+                    <h1>Cannoli</h1>
+                    <p>Trio tower of cannoli filled with smooth ricotta, sugar & cinnamon, with chocolate & raspberry
+                        <br> sauces. Single cannoli is also available.</p>
+                </div>
+                <div class="Desserts-data">
+                    <span>$5.89</span>
+                    <h1>Pistachio Passion</h1>
+                    <p>Layered pistachio cream, cream cheese custard & whipped cream atop a rich walnut crust.</p>
+                </div>
+                <div class="Desserts-data">
+                    <span>$4.89</span>
+                    <h1>Chocolate-and-Pistachio Biscotti</h1>
+                    <p>At Pesto, we vary these wonderful nutty biscotti, while also dipping them in melted dark <br>
+                        chocolate for an extra layer of flavor.</p>
+                </div>
+            </div>
+            <div id="drinks">
+                <div class="Drinks-data">
+                    <span>$10.89</span>
+                    <h1>Aperol Spritz</h1>
+                    <p>The most popular drink in Venice: refreshing, easygoing &…happy! Perfect to be sipped as <br> an
+                        “Aperitivo” just before dinner - delightful!</p>
+                </div>
+                <div class="Drinks-data">
+                    <span>$9.89</span>
+                    <h1>Negroni</h1>
+                    <p>Reward yourself with a moment of relaxation & pure pleasure while enjoying the full flavour <br>
+                        & simplicity of a Negroni, an iconic Italian cocktail.</p>
+                </div>
+                <div class="Drinks-data">
+                    <span>$11.89</span>
+                    <h1>Negroni Sbagliato</h1>
+                    <p>A cocktail for those who prefer more delicate flavours but nonetheless want a drink full of taste
+                        <br> & personality.</p>
+                </div>
+                <div class="Drinks-data">
+                    <span>$8.89</span>
+                    <h1>White Peach Bellini</h1>
+                    <p>White Peach Bellini is a classic drink from Venice Italy of white peach purée and Prosecco. It is
+                        <br> one of our most popular drinks at Pesto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-img">
+        <div class="three">
+            <img src="./images/software company1 (35).jpg" alt="">
+            <img src="./images/software company1 (36).jpg" alt="">
+            <img src="./images/software company1 (38).jpg" alt="">
+        </div>
+        <div class="two">
+            <img src="./images/software company1 (41).jpg" alt="">
+            <img src="./images/software company1 (42).jpg" alt="">
+        </div>
+    </div>
+
+    <div id="footer">
+        <div>
+            <img src="./images/software company1 (54).png" alt="">
+        </div>
+        <div class="list-footer">
+            <div>
+                <a href="#">MENU</a>
+            </div>
+            <div>
+                <a href="#">BLOG</a>
+            </div>
+            <div>
+                <a href="#">MENU</a>
+            </div>
+            <div>
+                <a href="#">MENU</a>
+            </div>
+            <div>
+                <a href="#">MENU</a>
+            </div>
+        </div>
+        <div class="icons">
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div>
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+            <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div>
+            <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div>
+            <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <p>© 2024 Pesto. All Rights Reserved. Privacy Policy. Design by Templatemonster</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
