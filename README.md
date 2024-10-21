@@ -1,1 +1,1 @@
-ascript..
+script..
