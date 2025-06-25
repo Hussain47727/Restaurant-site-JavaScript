@@ -1,27 +1,13 @@
-class Shape():
-    def method(self):
-        print('Area of shape')
-class Circle(Shape):
-    def __init__(self, radius):
-       self.radius = radius
-    def area(self):
-        print("Circle area", 3.15 * self.radius * self.radius)
+class Calculator:
+    def add(self, a, b):
+        return a + b
 
-class Rectangle(Shape):
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
-    def area(self):
-        print('Area of Rectangle :', self.length * self.width)
+    def subtract(self, a, b):
+        return a - b
 
-class Traingle(Shape):
-    def __init__(self, base, height):
-        self.base = base
-        self.height = height
-    def area(self):
-        print("Area of Traingle :", 0.5 * self.base * self.height)
+# Creating object of Calculator
+calc = Calculator()
 
-Shapes = [Circle(5), Rectangle(3 ,4), Traingle(3,5)]
-for shape in Shapes:
-    shape.area()
-       
+# Using the methods
+print("Addition:", calc.add(10, 5))       # Output: 15
+print("Subtraction:", calc.subtract(10, 5))  # Output: 5
